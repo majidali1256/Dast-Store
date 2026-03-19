@@ -32,9 +32,10 @@ export function renderHeader(activeRoute = '') {
         <button class="nav-item hover:text-[#e9c349] transition-all duration-500 flex items-center" style="animation-delay: 0.6s">
           <span class="material-symbols-outlined text-[18px]">person</span>
         </button>
-        <a href="#checkout" class="nav-item hover:text-[#e9c349] transition-all duration-500 flex items-center" style="animation-delay: 0.7s">
+        <button id="cart-bag-btn" class="nav-item hover:text-[#e9c349] transition-all duration-500 flex items-center relative" style="animation-delay: 0.7s">
           <span class="material-symbols-outlined text-[18px]">shopping_bag</span>
-        </a>
+          <span id="cart-badge" class="absolute -top-1.5 -right-2 w-4 h-4 bg-[#e9c349] text-[#3c2f00] text-[8px] font-bold rounded-full items-center justify-center font-label" style="display:none">0</span>
+        </button>
         <button class="md:hidden flex items-center" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
           <span class="material-symbols-outlined">menu</span>
         </button>

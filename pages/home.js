@@ -28,7 +28,7 @@ export function renderHome() {
         <a class="font-label uppercase tracking-[0.25em] text-[10px] text-primary border-b border-primary/20 pb-1 hover:border-primary transition-all mb-2" href="#catalog">View all items</a>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-12 gap-10 h-auto md:h-[1000px]">
-        <a href="#product" class="md:col-span-7 relative group overflow-hidden bg-surface-container-low block">
+        <a href="#product?id=sculpted-overcoat" class="md:col-span-7 relative group overflow-hidden bg-surface-container-low block">
           <img alt="Full length avant garde coat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s] brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2oXBk8mk10H5vmDNNzAFceFWBWIRHJyg21n5BIDzaPNYO129N1tiXNN_w64-EAKtyWQ1Kh243macFEAca1fB4u66VbHswxF-A_fqe4auv1GtZUsCsBnl9W1vuReQi6dmTm5pL1w1WhlKnCkLNP77DGOyMfSsekXJB_ShUHOtzi9E8pXYhI1ATAo0a0pIZ7u6gT16IFlYwzTOAAqoSnZO4Sudg59LcrTq8MyboUfSCd3zxzvgL9jc9F88Dt-TM-Em7r910HCPpPscj" />
           <div class="hover-overlay"></div>
           <div class="absolute bottom-10 left-10">
@@ -37,7 +37,7 @@ export function renderHome() {
           </div>
         </a>
         <div class="md:col-span-5 grid grid-rows-2 gap-10">
-          <a href="#product" class="relative group overflow-hidden bg-surface-container-low block">
+          <a href="#product?id=pleated-silk-tunic" class="relative group overflow-hidden bg-surface-container-low block">
             <img alt="Silk textured shirt detail" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s] brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOFbP7If7CKOPazDiWN2ImHYw9HvZEvPje3L59lLfFWgLlys_Q1Jr4nXAiSpU8jv-LMj_gJ7BNzHFMY5STFALf_eaM4SRoxe1RJbR0SwlHKS0qJ2zeYi_e4zxxO6SRf1lKNIEBEpSxDMTi8kj8SuH_M-A1C_IuwLEMTRal62N77GpGoerObWVBJah5JNSLF54AbocFTCIISNvPqI-QxNAZgUk-h4oK7-zSj72R9de5e-Xbh61dLtWgAwf7fam4r8L8WACyPSBgJ_QO" />
             <div class="hover-overlay"></div>
             <div class="absolute bottom-10 left-10">
@@ -45,7 +45,7 @@ export function renderHome() {
               <p class="font-label uppercase tracking-[0.2em] text-[10px] text-on-surface/70">Silk — $720</p>
             </div>
           </a>
-          <a href="#product" class="relative group overflow-hidden bg-surface-container-low block">
+          <a href="#product?id=obsidian-tote" class="relative group overflow-hidden bg-surface-container-low block">
             <img alt="Luxury leather accessory" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s] brightness-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbQguKMgsSQkMu9uijel0QAjsI_zVAIurS8duNiAub6jmE-eV7EbIAg3-N0LMRooUbdzGUkQoodkQwf1Ix-t5kBQWpRZL2wLn0YjGWFxrbxv4Ul4fFqUhf9T_wUuiVEZ3eoJVeQtEGYYzY5gXni7QAgw1YTp_xm87WknbuMq8orvKTUR9szELzC0qh3h72wpsXt2ttUGWQio-1z6X84oD36zMIR4-tfEDVB2LN1m79NYAS05ihn7oWuBLb8ElQazePk6E_wgOHrhZQ" />
             <div class="hover-overlay"></div>
             <div class="absolute bottom-10 left-10">
