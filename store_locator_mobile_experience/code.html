@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,400;0,6..72,700;1,6..72,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#353534",
+              "secondary-container": "#454747",
+              "on-primary-fixed": "#241a00",
+              "tertiary-container": "#121212",
+              "primary-container": "#181100",
+              "surface-container": "#201f1f",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "on-secondary": "#2f3131",
+              "on-tertiary-fixed-variant": "#474746",
+              "error": "#ffb4ab",
+              "tertiary-fixed": "#e5e2e1",
+              "on-secondary-container": "#b4b5b5",
+              "tertiary": "#c8c6c5",
+              "on-secondary-fixed": "#1a1c1c",
+              "surface-container-lowest": "#0e0e0e",
+              "primary": "#e9c349",
+              "inverse-primary": "#735c00",
+              "on-primary-fixed-variant": "#574500",
+              "on-surface-variant": "#c4c7c7",
+              "on-tertiary-container": "#7e7d7d",
+              "error-container": "#93000a",
+              "inverse-surface": "#e5e2e1",
+              "inverse-on-surface": "#313030",
+              "secondary-fixed": "#e2e2e2",
+              "surface-container-high": "#2a2a2a",
+              "on-background": "#e5e2e1",
+              "surface": "#131313",
+              "on-primary-container": "#997a00",
+              "on-surface": "#e5e2e1",
+              "primary-fixed": "#ffe088",
+              "primary-fixed-dim": "#e9c349",
+              "surface-container-low": "#1c1b1b",
+              "on-primary": "#3c2f00",
+              "on-secondary-fixed-variant": "#454747",
+              "outline": "#8e9192",
+              "surface-dim": "#131313",
+              "outline-variant": "#444748",
+              "surface-tint": "#e9c349",
+              "surface-container-highest": "#353534",
+              "on-error": "#690005",
+              "on-tertiary": "#313030",
+              "surface-bright": "#3a3939",
+              "on-tertiary-fixed": "#1c1b1b",
+              "background": "#131313",
+              "secondary": "#c6c6c7",
+              "secondary-fixed-dim": "#c6c6c7"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            -webkit-font-smoothing: antialiased;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-md flex justify-between items-center px-6 h-16">
+<button class="text-[#e5e2e1] active:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-['Newsreader'] font-bold text-[#e5e2e1] tracking-tighter text-xl">DAST ATELIERS</h1>
+<button class="text-[#e5e2e1] active:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</header>
+<main class="pt-16 pb-24">
+<!-- Hero Header -->
+<section class="px-6 pt-12 pb-8">
+<h2 class="font-headline text-5xl md:text-7xl font-light tracking-tight leading-none text-on-surface">
+                Ateliers
+            </h2>
+<div class="mt-4 w-12 h-[1px] bg-primary"></div>
+<p class="mt-6 text-on-surface-variant font-body text-sm uppercase tracking-[0.2em] max-w-xs leading-relaxed">
+                Global flagship destinations and private consultation suites.
+            </p>
+</section>
+<!-- Stylized Map View (Bento/Asymmetric) -->
+<section class="px-6 mb-12">
+<div class="relative w-full aspect-[4/5] md:aspect-video bg-surface-container overflow-hidden">
+<div class="absolute inset-0 opacity-40 grayscale contrast-125" data-alt="Minimalist dark mode topographic map of city streets" data-location="Paris" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBiuTDOpes19Vl3L9Sfv4qed6E0I_Ow68t-GcP5j4lsEQrO_cbzkLRfy5996GI67MSM9RvACLQfXQKjmd5DG-V7JDEHHB4b7NI5_gu3QYrYIQxQfksogSFck_rUCa3CFI28nuh_NjxWWQ6AOlBEPexG_luuCL6KIUGDqzY71FstTAnaNRYi8CmauxA3kzFK-UGoj27E3ymxkr5PZawzhOKf_uM1UaPegXu4HVZu8iu39wfBbs_jQByfczHtebQWBtSxJIT9t7cV2HbC'); background-size: cover; background-position: center;"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<!-- Map Pointers (Golden Accents) -->
+<div class="absolute top-[30%] left-[45%] flex flex-col items-center">
+<div class="w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_#e9c349]"></div>
+<span class="mt-2 text-[10px] font-label tracking-widest uppercase text-on-surface bg-surface/80 px-2 py-1 backdrop-blur-sm">Paris</span>
+</div>
+<div class="absolute top-[55%] left-[70%] flex flex-col items-center">
+<div class="w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_#e9c349]"></div>
+<span class="mt-2 text-[10px] font-label tracking-widest uppercase text-on-surface bg-surface/80 px-2 py-1 backdrop-blur-sm">Tokyo</span>
+</div>
+<div class="absolute bottom-6 left-6">
+<button class="bg-surface/90 border border-outline-variant/20 px-4 py-2 text-[10px] tracking-[0.2em] uppercase text-on-surface backdrop-blur-md flex items-center gap-2">
+<span class="material-symbols-outlined !text-sm">near_me</span>
+                        Find Nearest
+                    </button>
+</div>
+</div>
+</section>
+<!-- Location List -->
+<section class="space-y-16 px-6">
+<!-- Paris -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<img alt="Paris Atelier Interior" class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="Modern dark luxury interior with gold light fixtures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjBGrGgQNmDId11ViYIMn0Afkxt9DBbnmbtwI-9lIiQMr4kkttk4C-3lJCRIyQL7mnyyIiJyPRxqRUHC5TWyAfqEPUBDB0ZrfuMwpTccA8IxMZokNSGYKri0BVJR8DCl_C5siHoQYgSCy2cm7N6YpfB9_y3awj1dAZN4dECj2eviaip7nRWiqzVZ004MUKf6hP5kvioikSqEFz1U8MhRLbXjUMRCColGPMKCCPn3yXk7ZNPiA5ozFeVZc5W5WFN5fRnmGCwjFUYTpR"/>
+<div class="absolute top-4 left-4 bg-primary text-on-primary text-[10px] font-bold tracking-[0.2em] uppercase px-3 py-1">Flagship</div>
+</div>
+<div class="flex flex-col justify-center h-full pt-4 md:pt-0">
+<span class="text-primary text-xs font-label tracking-[0.3em] uppercase mb-2">France</span>
+<h3 class="font-headline text-3xl mb-4 text-on-surface">Paris, Rue St. Honoré</h3>
+<div class="space-y-4 text-on-surface-variant font-light text-sm tracking-wide leading-relaxed">
+<p>251 Rue Saint-Honoré,<br/>75001 Paris, France</p>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined !text-xs text-outline">schedule</span>
+<p>10:00 — 19:00 Daily</p>
+</div>
+</div>
+<button class="mt-8 border border-outline-variant/30 py-4 px-6 text-[11px] font-bold tracking-[0.25em] uppercase text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 w-full md:w-max">
+                        Book Appointment
+                    </button>
+</div>
+</div>
+<!-- Separator -->
+<div class="w-[60%] h-[1px] bg-surface-container-high mx-auto"></div>
+<!-- Tokyo -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden md:order-last">
+<img alt="Tokyo Atelier Interior" class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="Minimalist Japanese architectural interior in dark tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCscy24mvHH3YM4Rz08Qpj-5Orvaaba4OEKE2bed5xUjBlE0qsemQSLdcx2gIraCRtPKijnQHcQnsK0P3mvmNok_if5CzVf1EM7kVo0TheAsO-irXmncRGC7tn8R1yt88eKSQt4nv6kuszTHjw59b7Pt8ZXOq0A7nF531fLTht-mt5SLktQUmEMnt2ULZPOFFxSupV-rTrxqzxPApLLgtELCwCcfZCXq_rkaKwkUHs2RCFdT6aUL1dv4VaTGvi9Z66IILvMJ3Sh-EaF"/>
+</div>
+<div class="flex flex-col justify-center h-full pt-4 md:pt-0">
+<span class="text-primary text-xs font-label tracking-[0.3em] uppercase mb-2">Japan</span>
+<h3 class="font-headline text-3xl mb-4 text-on-surface">Tokyo, Ginza District</h3>
+<div class="space-y-4 text-on-surface-variant font-light text-sm tracking-wide leading-relaxed">
+<p>5-chōme-8-7 Ginza, Chuo City,<br/>Tokyo 104-0061, Japan</p>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined !text-xs text-outline">schedule</span>
+<p>11:00 — 20:00 Daily</p>
+</div>
+</div>
+<button class="mt-8 border border-outline-variant/30 py-4 px-6 text-[11px] font-bold tracking-[0.25em] uppercase text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 w-full md:w-max">
+                        Book Appointment
+                    </button>
+</div>
+</div>
+<!-- New York -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<div class="aspect-[3/4] bg-surface-container-low relative overflow-hidden">
+<img alt="New York Atelier Interior" class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="Industrial luxury loft interior with dark obsidian walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb1U-0PbBvxp1EyUohvGwjvJbyqRDq9o_Ce6ZWBWC5WS4jYTpXvCqKqFajyCgoFGW7st0yHbjIszUX7rv0ZrbVoaMDYrbeI0TALV9yvh5Y4IRGoZWAb9QYwoWC7RoAr9jRb1vdKbsuITy1iCd0dExPr81czScB3cFIOusEAQY0FgSg-AxD_BnsZqzmyYiDnjD6axAjwuDxDBMj50nllU1lbjB0htO2acRHhdjFcVx-Vl1-1PT_6Nx8bMsGB6wEVObyTvKQEF13ndxB"/>
+</div>
+<div class="flex flex-col justify-center h-full pt-4 md:pt-0">
+<span class="text-primary text-xs font-label tracking-[0.3em] uppercase mb-2">USA</span>
+<h3 class="font-headline text-3xl mb-4 text-on-surface">New York, Soho Loft</h3>
+<div class="space-y-4 text-on-surface-variant font-light text-sm tracking-wide leading-relaxed">
+<p>42 Greene St,<br/>New York, NY 10013, USA</p>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined !text-xs text-outline">schedule</span>
+<p>10:00 — 18:00 (Closed Sundays)</p>
+</div>
+</div>
+<button class="mt-8 border border-outline-variant/30 py-4 px-6 text-[11px] font-bold tracking-[0.25em] uppercase text-on-surface hover:bg-primary hover:text-on-primary transition-all duration-300 w-full md:w-max">
+                        Book Appointment
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bottom Narrative Section -->
+<section class="mt-24 px-6 py-20 bg-surface-container-low text-center">
+<h4 class="font-headline text-2xl mb-6">Private Concierge</h4>
+<p class="font-body text-sm text-on-surface-variant tracking-wide max-w-sm mx-auto leading-relaxed mb-8">
+                Cannot visit us in person? Experience DAST Ateliers through our virtual private viewing service.
+            </p>
+<a class="inline-block text-primary text-[10px] font-bold tracking-[0.3em] uppercase border-b border-primary pb-1 hover:opacity-70 transition-opacity" href="#">
+                Learn More
+            </a>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 border-t border-[#444748]/15 bg-[#131313]/80 backdrop-blur-xl flex justify-around items-center w-full px-4 pb-safe h-20 shadow-[0_-4px_40px_rgba(0,0,0,0.6)]">
+<a class="flex flex-col items-center justify-center text-[#c4c7c7] py-2 hover:text-[#e5e2e1] transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-['Inter'] uppercase tracking-[0.1rem] text-[10px] mt-1">COLLECTIONS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#e9c349] py-2 hover:text-[#e5e2e1] transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">near_me</span>
+<span class="font-['Inter'] uppercase tracking-[0.1rem] text-[10px] mt-1">LOCATIONS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c7c7] py-2 hover:text-[#e5e2e1] transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">auto_awesome_motion</span>
+<span class="font-['Inter'] uppercase tracking-[0.1rem] text-[10px] mt-1">LOOKBOOK</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c7c7] py-2 hover:text-[#e5e2e1] transition-all active:scale-95 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Inter'] uppercase tracking-[0.1rem] text-[10px] mt-1">ACCOUNT</span>
+</a>
+</nav>
+</body></html>

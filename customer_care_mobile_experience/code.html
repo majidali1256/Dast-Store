@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DAST | Customer Care</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131313;
+            color: #e5e2e1;
+            -webkit-font-smoothing: antialiased;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .glass-panel {
+            background: rgba(53, 53, 52, 0.6);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "background": "#131313",
+                        "secondary": "#c6c6c7",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "outline": "#8e9192",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface-tint": "#e9c349",
+                        "surface-container-highest": "#353534",
+                        "on-error": "#690005",
+                        "surface-dim": "#131313",
+                        "outline-variant": "#444748",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary": "#313030",
+                        "on-surface": "#e5e2e1",
+                        "on-primary-container": "#997a00",
+                        "primary-fixed-dim": "#e9c349",
+                        "primary-fixed": "#ffe088",
+                        "surface-container-low": "#1c1b1b",
+                        "on-primary": "#3c2f00",
+                        "inverse-surface": "#e5e2e1",
+                        "inverse-on-surface": "#313030",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-fixed": "#e2e2e2",
+                        "surface": "#131313",
+                        "on-background": "#e5e2e1",
+                        "surface-container-lowest": "#0e0e0e",
+                        "primary": "#e9c349",
+                        "inverse-primary": "#735c00",
+                        "on-surface-variant": "#c4c7c7",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-tertiary-container": "#7e7d7d",
+                        "error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "error": "#ffb4ab",
+                        "tertiary-fixed": "#e5e2e1",
+                        "tertiary": "#c8c6c5",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-primary-fixed": "#241a00",
+                        "tertiary-container": "#121212",
+                        "primary-container": "#181100",
+                        "surface-container": "#201f1f",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "on-secondary": "#2f3131",
+                        "surface-variant": "#353534",
+                        "secondary-container": "#454747"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body selection:bg-primary selection:text-on-primary">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 h-16 bg-[#131313] flex justify-between items-center px-6">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#e5e2e1] cursor-pointer" data-icon="menu">menu</span>
+</div>
+<div class="font-serif uppercase tracking-tighter text-3xl text-[#e9c349]">DAST</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[#e5e2e1] cursor-pointer" data-icon="search">search</span>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-md mx-auto">
+<!-- Hero Section -->
+<section class="mb-16">
+<h1 class="font-headline text-5xl font-extralight tracking-tight mb-4 leading-tight">Customer Care</h1>
+<p class="font-body text-on-surface-variant text-sm uppercase tracking-[0.12em] leading-relaxed max-w-[280px]">
+                Our commitment to exceptional service mirrors the craftsmanship of our collections.
+            </p>
+</section>
+<!-- Service Options -->
+<section class="space-y-6 mb-20">
+<div class="group relative bg-surface-container-low p-8 border-l border-primary/20 hover:border-primary transition-colors duration-500">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="chat_bubble_outline">chat_bubble_outline</span>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary bg-primary/10 px-2 py-1">Active</span>
+</div>
+<h3 class="font-headline text-2xl mb-2">Live Concierge</h3>
+<p class="font-body text-on-surface-variant text-xs uppercase tracking-wider">Available 10AM — 6PM GMT</p>
+<div class="mt-8 flex items-center text-[11px] font-bold uppercase tracking-[0.15em] text-primary">
+                    Start Dialogue <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 border-l border-outline-variant/30">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" data-icon="mail">mail</span>
+</div>
+<h3 class="font-headline text-2xl mb-2">Email Inquiry</h3>
+<p class="font-body text-on-surface-variant text-xs uppercase tracking-wider">Response within 24 hours</p>
+<div class="mt-8 flex items-center text-[11px] font-bold uppercase tracking-[0.15em] text-on-surface">
+                    Compose Message <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 border-l border-outline-variant/30">
+<div class="flex justify-between items-start mb-6">
+<span class="material-symbols-outlined text-on-surface-variant text-3xl" data-icon="calendar_today">calendar_today</span>
+</div>
+<h3 class="font-headline text-2xl mb-2">Book Appointment</h3>
+<p class="font-body text-on-surface-variant text-xs uppercase tracking-wider">Private virtual viewing</p>
+<div class="mt-8 flex items-center text-[11px] font-bold uppercase tracking-[0.15em] text-on-surface">
+                    Select Date <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+</section>
+<!-- Information & Services (Accordions) -->
+<section class="mb-20">
+<h2 class="font-label text-[10px] uppercase tracking-[0.3em] text-on-surface-variant mb-8 border-b border-outline-variant/20 pb-4">Essential Information</h2>
+<div class="divide-y divide-outline-variant/20">
+<div class="py-6 flex justify-between items-center group cursor-pointer">
+<span class="font-headline text-xl">Shipping &amp; Delivery</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300 group-hover:rotate-45" data-icon="add">add</span>
+</div>
+<div class="py-6 flex justify-between items-center group cursor-pointer">
+<span class="font-headline text-xl">Returns &amp; Exchanges</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300 group-hover:rotate-45" data-icon="add">add</span>
+</div>
+<div class="py-6 flex justify-between items-center group cursor-pointer">
+<span class="font-headline text-xl">Material Care</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300 group-hover:rotate-45" data-icon="add">add</span>
+</div>
+<div class="py-6 flex justify-between items-center group cursor-pointer">
+<span class="font-headline text-xl">Bespoke Sizing</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-300 group-hover:rotate-45" data-icon="add">add</span>
+</div>
+</div>
+</section>
+<!-- Submit Inquiry Form -->
+<section class="mb-12">
+<h2 class="font-headline text-3xl mb-10">Direct Inquiry</h2>
+<form class="space-y-8">
+<div class="relative group">
+<label class="block font-label text-[9px] uppercase tracking-[0.2em] text-outline-variant mb-2 group-focus-within:text-primary transition-colors">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 text-on-surface placeholder-on-surface/20 transition-all font-light" placeholder="E.g. Alexander Vance" type="text"/>
+</div>
+<div class="relative group">
+<label class="block font-label text-[9px] uppercase tracking-[0.2em] text-outline-variant mb-2 group-focus-within:text-primary transition-colors">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 text-on-surface placeholder-on-surface/20 transition-all font-light" placeholder="E.g. vance@atelier.com" type="email"/>
+</div>
+<div class="relative group">
+<label class="block font-label text-[9px] uppercase tracking-[0.2em] text-outline-variant mb-2 group-focus-within:text-primary transition-colors">Subject</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 text-on-surface placeholder-on-surface/20 transition-all font-light" placeholder="Regarding Order #8821" type="text"/>
+</div>
+<div class="relative group">
+<label class="block font-label text-[9px] uppercase tracking-[0.2em] text-outline-variant mb-2 group-focus-within:text-primary transition-colors">Your Message</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-2 text-on-surface placeholder-on-surface/20 transition-all font-light resize-none" placeholder="How may we assist you?" rows="4"></textarea>
+</div>
+<button class="w-full py-5 bg-primary text-on-primary font-label font-bold uppercase tracking-[0.25em] text-xs hover:bg-primary/90 transition-colors active:scale-[0.98] duration-200" type="submit">
+                    Send Message
+                </button>
+</form>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-safe h-20 bg-[#131313]/60 backdrop-blur-xl z-50 shadow-[0_-10px_40px_rgba(0,0,0,0.6)]">
+<a class="flex flex-col items-center justify-center text-[#c4c7c7] pt-2 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="storefront">storefront</span>
+<span class="font-sans uppercase tracking-[0.15rem] text-[10px] font-bold">Shop</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c7c7] pt-2 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="subscriptions">subscriptions</span>
+<span class="font-sans uppercase tracking-[0.15rem] text-[10px] font-bold">Archive</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#c4c7c7] pt-2 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="shopping_bag">shopping_bag</span>
+<span class="font-sans uppercase tracking-[0.15rem] text-[10px] font-bold">Bag</span>
+</a>
+<!-- Profile is active as Customer Care falls under User/Profile/Account ecosystem -->
+<a class="flex flex-col items-center justify-center text-[#e9c349] border-t-2 border-[#e9c349] pt-2 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-sans uppercase tracking-[0.15rem] text-[10px] font-bold">Profile</span>
+</a>
+</nav>
+</body></html>

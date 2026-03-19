@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAST — The Art of the Hand</title>
+  <meta name="description" content="DAST is a luxury fashion house crafting timeless silhouettes. Explore our curated collections of handmade coats, knitwear, accessories and footwear." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-high": "#2a2a2a",
+            "surface-container-highest": "#353534",
+            "surface-bright": "#3a3939",
+            "surface-container-lowest": "#0e0e0e",
+            "inverse-surface": "#e5e2e1",
+            "primary-container": "#181100",
+            "surface": "#131313",
+            "outline-variant": "#444748",
+            "surface-variant": "#353534",
+            "on-surface": "#e5e2e1",
+            "on-background": "#e5e2e1",
+            "on-surface-variant": "#c4c7c7",
+            "primary": "#e9c349",
+            "on-primary": "#3c2f00",
+            "outline": "#8e9192",
+            "secondary-container": "#454747",
+            "tertiary": "#c8c6c5",
+            "surface-container": "#201f1f",
+            "primary-fixed": "#ffe088",
+            "background": "#131313",
+            "surface-tint": "#e9c349",
+            "secondary": "#c6c6c7",
+            "surface-container-low": "#1c1b1b",
+            "tertiary-container": "#121212",
+            "error": "#ffb4ab",
+            "primary-fixed-dim": "#e9c349",
+          },
+          fontFamily: {
+            headline: ["Newsreader", "serif"],
+            body: ["Inter", "sans-serif"],
+            label: ["Inter", "sans-serif"],
+          },
+          borderRadius: { DEFAULT: "0px", lg: "0px", xl: "0px", full: "9999px" },
+          keyframes: {
+            "ken-burns": {
+              "0%": { transform: "scale(1) translate(0, 0)" },
+              "100%": { transform: "scale(1.1) translate(-1%, -1%)" },
+            },
+            "fade-in-up": {
+              "0%": { opacity: "0", transform: "translateY(20px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" },
+            },
+            "fade-in": {
+              "0%": { opacity: "0" },
+              "100%": { opacity: "1" },
+            },
+            "reveal-up": {
+              "0%": { opacity: "0", transform: "translateY(40px)" },
+              "100%": { opacity: "1", transform: "translateY(0)" },
+            },
+            "reveal-side": {
+              "0%": { opacity: "0", transform: "translateX(30px)" },
+              "100%": { opacity: "1", transform: "translateX(0)" },
+            },
+            "hero-entrance": {
+              "0%": { opacity: "0", transform: "scale(1.05) translateY(10px)" },
+              "100%": { opacity: "1", transform: "scale(1) translateY(0)" },
+            },
+          },
+          animation: {
+            "ken-burns": "ken-burns 20s ease-in-out infinite alternate",
+            "fade-in-up": "fade-in-up 1s ease-out forwards",
+            "fade-in": "fade-in 1s ease-out forwards",
+            "reveal-up": "reveal-up 1.2s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards",
+            "reveal-side": "reveal-side 1s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards",
+            "hero-entrance": "hero-entrance 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body class="bg-background text-on-surface selection:bg-primary selection:text-on-primary font-body">
+  <div id="app"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

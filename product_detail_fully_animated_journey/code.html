@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-fixed-variant": "#454747",
+              "surface-container-high": "#2a2a2a",
+              "surface-container-highest": "#353534",
+              "surface-bright": "#3a3939",
+              "on-primary-fixed": "#241a00",
+              "secondary-fixed-dim": "#c6c6c7",
+              "surface-container-lowest": "#0e0e0e",
+              "inverse-surface": "#e5e2e1",
+              "primary-container": "#181100",
+              "on-secondary": "#2f3131",
+              "surface": "#131313",
+              "on-tertiary-container": "#7e7d7d",
+              "outline-variant": "#444748",
+              "secondary-fixed": "#e2e2e2",
+              "on-tertiary": "#313030",
+              "inverse-on-surface": "#313030",
+              "surface-dim": "#131313",
+              "on-background": "#e5e2e1",
+              "primary-fixed-dim": "#e9c349",
+              "surface-variant": "#353534",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-surface": "#e5e2e1",
+              "primary": "#e9c349",
+              "on-primary": "#3c2f00",
+              "outline": "#8e9192",
+              "secondary-container": "#454747",
+              "tertiary": "#c8c6c5",
+              "on-tertiary-fixed": "#1c1b1b",
+              "error-container": "#93000a",
+              "on-primary-container": "#997a00",
+              "on-tertiary-fixed-variant": "#474746",
+              "surface-container": "#201f1f",
+              "primary-fixed": "#ffe088",
+              "background": "#121212",
+              "surface-tint": "#e9c349",
+              "secondary": "#c6c6c7",
+              "on-surface-variant": "#c4c7c7",
+              "surface-container-low": "#1c1b1b",
+              "tertiary-container": "#121212",
+              "on-secondary-container": "#b4b5b5",
+              "error": "#ffb4ab",
+              "on-error-container": "#ffdad6",
+              "tertiary-fixed": "#e5e2e1",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "on-primary-fixed-variant": "#574500",
+              "on-error": "#690005",
+              "inverse-primary": "#735c00"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Inter", "sans-serif"],
+              "label": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            keyframes: {
+              'fade-up': {
+                '0%': { opacity: '0', transform: 'translateY(30px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              'hero-entrance': {
+                '0%': { opacity: '0', transform: 'scale(1.05) translateY(10px)' },
+                '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+              }
+            },
+            animation: {
+              'fade-up': 'fade-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'fade-in': 'fade-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+              'hero-entrance': 'hero-entrance 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #121212;
+        color: #e5e2e1;
+        -webkit-font-smoothing: antialiased;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .reveal {
+        opacity: 0;
+      }
+      .stagger-1 { animation-delay: 0.1s; }
+      .stagger-2 { animation-delay: 0.2s; }
+      .stagger-3 { animation-delay: 0.3s; }
+      .stagger-4 { animation-delay: 0.4s; }
+      .stagger-5 { animation-delay: 0.5s; }
+      .stagger-6 { animation-delay: 0.6s; }
+      .stagger-7 { animation-delay: 0.7s; }
+      .stagger-8 { animation-delay: 0.8s; }
+      .stagger-9 { animation-delay: 0.9s; }
+      .stagger-10 { animation-delay: 1s; }
+
+      /* Interaction Smoothness */
+      .size-btn {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .accordion-content {
+        transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    </style>
+</head>
+<body class="font-body selection:bg-primary/30 selection:text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 z-50 w-full bg-[#121212]/60 backdrop-blur-md flex justify-between items-center px-8 py-6">
+<div class="flex flex-col items-start leading-none">
+<a class="text-3xl font-headline font-normal tracking-[0.3em] text-[#e5e2e1] uppercase" href="#">DAST</a>
+<span class="text-[8px] uppercase tracking-[0.4em] text-primary/80 mt-1 font-label font-medium">The Art of the Hand</span>
+</div>
+<div class="hidden md:flex space-x-12 items-center">
+<a class="text-[#c4c7c7] hover:text-primary transition-colors duration-500 font-label uppercase tracking-[0.2em] text-[10px] font-medium" href="#">New Arrivals</a>
+<a class="text-primary font-bold border-b border-primary pb-1 font-label uppercase tracking-[0.2em] text-[10px]" href="#">Collections</a>
+<a class="text-[#c4c7c7] hover:text-primary transition-colors duration-500 font-label uppercase tracking-[0.2em] text-[10px] font-medium" href="#">About</a>
+<a class="text-[#c4c7c7] hover:text-primary transition-colors duration-500 font-label uppercase tracking-[0.2em] text-[10px] font-medium" href="#">Archive</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-on-surface hover:text-primary transition-all duration-500">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="text-on-surface hover:text-primary transition-all duration-500">
+<span class="material-symbols-outlined">person</span>
+</button>
+<button class="text-on-surface hover:text-primary transition-all duration-500">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</nav>
+<main class="min-h-screen pt-32 overflow-x-hidden">
+<!-- Product Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 max-w-[1600px] mx-auto">
+<!-- Image Gallery -->
+<div class="md:col-span-7 px-8 md:px-12 flex flex-col gap-8">
+<div class="aspect-[3/4] bg-surface-container-low overflow-hidden reveal animate-hero-entrance">
+<img class="w-full h-full object-cover grayscale transition-transform duration-[2.5s] ease-out hover:scale-105" data-alt="Editorial fashion shot of high-end structured coat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6s0G4-VUWp3eYgxZQm8z4D6k6r9cHyY13aC0FXWX73Zb7UKhuKei0MsL60MelwuX1n-QJITPwI5iJ6y__fSX2gribUopK9CCPnhgssaaHRVEy2ocm7XGDOZE_WnlLsw-DdU0JEMD2SUlF8UzIJRPNAWCvmpzVfZYmUUekYc11gjqZpRmfwSwUapcOKyP022NXTUIUPErqOuH-LT7gT4Wlp1GTod_LykvnD8QT8bzVLKCODYhCCefmCiv-Uz-r0tHL-HX1H72XRciK"/>
+</div>
+<div class="grid grid-cols-2 gap-8 reveal animate-fade-up stagger-6">
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" data-alt="Close up texture detail of luxury wool fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsPGeI8nMhWTplIGn0cWKtstWkTF8tFW30vk27cW5l5jkJ0MsN-20fDdSE9LZEQ9OTxqLLUECgTrijRRBOqwUJDVjz-GV7gyBTBGQL32Gd-EoG0uzf2LNIJm8YmkCzeMlZIPZ0oKp9u68Ek1pJSFOL5-K2601woXt87u5O-i7lS1dlF4kfD36uu-vOlBzEY8-R9LifQfNeqYVQhTju00C-U2ehzXbqg6fWlQZiYjIruV8RsN8iSY3Xv1FIm9aGcwHsVEXv0hbr9EhS"/>
+</div>
+<div class="aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105" data-alt="Macro detail of gold hardware on garment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNPcxyM_PlCqyqeSBB1grV7x2nyID12H1V465SgloX0-DbuuHUrMTXwLqG504ooPJ12N_8vW-8dMcBwWV40F9mBOmY-wB7jjcaGqBVLOoNQelXb8u7fnoFmUaUMMyfoiuzdgK2oulo5r0T4hKUCnWjpJ1eGU1y868o2rHE3v1SgFYgduyG09CJ_dC4bD1dpzr4bK0Wkcb4kLlrgYffiykMpmyKnsmKM0Wuq_yCFTzqZp-OvEdr-QNFShKvW8ClayrhLL8VspeVRVaE"/>
+</div>
+</div>
+<div class="aspect-[16/9] bg-surface-container-low overflow-hidden mb-12 reveal animate-fade-up stagger-8">
+<img class="w-full h-full object-cover grayscale opacity-80 transition-transform duration-[2s] hover:scale-105" data-alt="Wide environmental fashion shot in architectural space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ04kZAEZyxoHike6V1BW1T3siMT045vx8gnec6puO5Nsu_Jnxi3USLbzAQQrL14dUpHJ_NRuf3YLYj9Pk1AYhoR5VeH9yc1wzQlsR5AY0YGCqiu52P-yfl-yFkIvEoaXi7LKx274SQmajLuJtBfiBS00_YSsj23feMNUJMNe-GMVhCvef6xuLKfJJ3__8vz4PtPKBjtuP1nFbiBZSnKo9sZ196l0RGs5mxRGdQ9BybPHTJpvyBGGslrv9-prEUUSEF_jEErViC9Jj"/>
+</div>
+</div>
+<!-- Product Actions -->
+<div class="md:col-span-5 px-8 md:px-16 pt-0 md:pt-4 space-y-12">
+<div class="sticky top-40 space-y-12">
+<header class="space-y-6">
+<p class="reveal animate-fade-up stagger-1 font-label uppercase tracking-[0.3em] text-[10px] text-primary font-bold">Handmade — Limited Edition 04/50</p>
+<h1 class="reveal animate-fade-up stagger-2 font-headline text-6xl md:text-8xl tracking-tight leading-[0.9] text-on-surface font-normal">
+                            The Obsidian <br/><span class="italic">Overcoat</span>
+</h1>
+<p class="reveal animate-fade-up stagger-3 font-headline text-3xl text-on-surface font-normal mt-4">$4,250.00</p>
+</header>
+<div class="space-y-10">
+<div class="reveal animate-fade-up stagger-4">
+<span class="font-label uppercase tracking-[0.25em] text-[10px] text-outline block mb-5 font-semibold">Select Size</span>
+<div class="flex flex-wrap gap-3">
+<button class="size-btn px-8 py-3 border border-outline-variant/30 text-[10px] font-label uppercase tracking-[0.25em] hover:border-primary hover:text-primary font-bold">EU 46</button>
+<button class="size-btn px-8 py-3 border border-primary text-[10px] font-label uppercase tracking-[0.25em] text-primary bg-primary/5 font-bold">EU 48</button>
+<button class="size-btn px-8 py-3 border border-outline-variant/30 text-[10px] font-label uppercase tracking-[0.25em] hover:border-primary hover:text-primary font-bold">EU 50</button>
+<button class="size-btn px-8 py-3 border border-outline-variant/30 text-[10px] font-label uppercase tracking-[0.25em] hover:border-primary hover:text-primary font-bold">EU 52</button>
+</div>
+</div>
+<div class="space-y-4">
+<button class="reveal animate-fade-up stagger-5 w-full bg-primary text-on-primary py-6 font-label font-bold uppercase tracking-[0.4em] text-[11px] hover:brightness-110 active:scale-[0.98] transition-all shadow-xl">Add to Bag</button>
+<button class="reveal animate-fade-up stagger-6 w-full border border-outline-variant/30 py-6 font-label uppercase tracking-[0.4em] text-[11px] font-bold hover:bg-surface-container-high transition-all">Find in Store</button>
+</div>
+</div>
+<div class="pt-12 border-t border-outline-variant/15 space-y-8">
+<p class="font-headline text-2xl leading-tight text-on-surface italic font-normal reveal animate-fade-up stagger-7">
+                            "A silhouette carved from the night itself. Structured wool-cashmere blend meeting raw architectural edges."
+                        </p>
+<p class="font-body text-[14px] leading-relaxed text-on-surface-variant font-medium reveal animate-fade-up stagger-8">
+                            Each piece is hand-tailored in our Milan atelier, utilizing centuries-old techniques refined for the modern vanguard. The Obsidian Overcoat features a drop-shoulder construction and signature hidden placket.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Details & Narrative Sections -->
+<section class="bg-surface-container-lowest py-48 px-8 md:px-24">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-24">
+<div class="space-y-10 reveal animate-fade-up stagger-1 accordion-section group">
+<span class="font-label uppercase tracking-[0.4em] text-[10px] text-primary font-bold">01 / Process</span>
+<h3 class="font-headline text-5xl tracking-tight leading-none font-normal">Details &amp; <br/><span class="italic">Care</span></h3>
+<ul class="accordion-content space-y-5 font-body text-[13px] text-on-surface-variant border-l border-primary/30 pl-8 leading-relaxed font-medium group-hover:border-primary transition-colors">
+<li>85% Virgin Wool, 15% Cashmere</li>
+<li>Cupro Lining with Silk Piping</li>
+<li>Hand-finished Horn Buttons</li>
+<li>Professional Dry Clean Only</li>
+<li>Store on wide-shoulder hanger</li>
+</ul>
+</div>
+<div class="space-y-10 reveal animate-fade-up stagger-2 accordion-section group">
+<span class="font-label uppercase tracking-[0.4em] text-[10px] text-primary font-bold">02 / Ethos</span>
+<h3 class="font-headline text-5xl tracking-tight leading-none font-normal">Sustain-<br/><span class="italic">ability</span></h3>
+<p class="accordion-content font-body text-[13px] text-on-surface-variant leading-relaxed font-medium">
+                        Our wool is sourced from a family-run regenerative farm in the Italian Alps. We track every fiber from the shearing to the final stitch. Zero-waste pattern cutting ensures minimal environmental footprint.
+                    </p>
+<a class="inline-block font-label uppercase tracking-[0.3em] text-[10px] text-on-surface border-b border-primary pb-1 font-bold hover:text-primary transition-colors" href="#">Read the full report</a>
+</div>
+<div class="space-y-10 reveal animate-fade-up stagger-3 accordion-section group">
+<span class="font-label uppercase tracking-[0.4em] text-[10px] text-primary font-bold">03 / Origins</span>
+<h3 class="font-headline text-5xl tracking-tight leading-none font-normal">The <br/><span class="italic">Atelier</span></h3>
+<p class="accordion-content font-body text-[13px] text-on-surface-variant leading-relaxed font-medium">
+                        Forged in the heart of Northern Italy. This garment represents 128 hours of human labor, carrying the signature of the master tailor inside the inner breast pocket.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Styled With -->
+<section class="py-48 px-8 md:px-24">
+<div class="max-w-7xl mx-auto mb-20 flex justify-between items-end reveal animate-fade-up">
+<h2 class="font-headline text-7xl tracking-tight font-normal">Styled <span class="italic text-primary">With</span></h2>
+<div class="flex gap-4">
+<button class="w-16 h-16 flex items-center justify-center border border-outline-variant/30 hover:border-primary transition-all group">
+<span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">west</span>
+</button>
+<button class="w-16 h-16 flex items-center justify-center border border-outline-variant/30 hover:border-primary transition-all group">
+<span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">east</span>
+</button>
+</div>
+</div>
+<div class="max-w-7xl mx-auto flex gap-12 overflow-x-auto no-scrollbar snap-x snap-mandatory px-0">
+<!-- Item 1 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start group cursor-pointer reveal animate-fade-up stagger-1">
+<div class="aspect-[3/4] overflow-hidden mb-8 bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110" data-alt="Luxury charcoal silk trousers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF5nyXmyUXjAbAq4umDZIU1l4jXtBOG5aQYQi1dNMNXGYdlKs7hehxFMmts38Rvvlb-eHcOg8gqPbPtu3tF690WDZsCr9lIOVuFKcbaTtk1LsC3mg9vOesXuFb_lZCankMgJx0kQd6TDtQZVZM0OJ04fUWwQHHD4dwVTnvPRzHrt6uwCcMFODYc6VJscc-rqSV5KcYcoEXr-PEXIzcKfdjN_wMLzmBlcrkWTF83fNVMZkLoThZ0IDsb2G9WAbJFcOqdCduYfZJ0jeE"/>
+</div>
+<div class="flex justify-between items-start gap-4 transition-transform duration-500 group-hover:translate-x-1">
+<div class="space-y-1">
+<span class="font-label uppercase tracking-[0.2em] text-[9px] text-outline font-bold">Trousers</span>
+<h4 class="font-headline text-3xl tracking-tight leading-none font-normal">Charcoal Silk Wide-Leg</h4>
+</div>
+<p class="font-label text-[11px] uppercase tracking-[0.25em] text-outline font-bold mt-2">$1,150</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start group cursor-pointer reveal animate-fade-up stagger-2">
+<div class="aspect-[3/4] overflow-hidden mb-8 bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale transition-transform duration-[1.5s] ease-out group-hover:scale-110 group-hover:grayscale-0" data-alt="Premium black leather boots" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD27bdrsa7C_93PWL7W-W_VV7yOWQCuj9Vtx0w5LEDprK5GGciu1M870bP56wzSzb67bcLNrr3tpQP6SeQ5T6DFbJf-FpC7-eJa-oz_dUuU0IDeToCejCpTlwfwTNwIQ0OyxPlxCuhapXzzqfx_-uPIUPXwBpdHLJJw319WDGJgUlcqenj6rAkoHty6mWEIWRqMmHDLoZWGrK3NHyI9fXg9FaNGVxSYTYCDgFOVu_IG22K6qIIrykVnU2vdIpeDcyutu53Fxb8BoBey"/>
+</div>
+<div class="flex justify-between items-start gap-4 transition-transform duration-500 group-hover:translate-x-1">
+<div class="space-y-1">
+<span class="font-label uppercase tracking-[0.2em] text-[9px] text-outline font-bold">Footwear</span>
+<h4 class="font-headline text-3xl tracking-tight leading-none font-normal">The Night-Walker Boot</h4>
+</div>
+<p class="font-label text-[11px] uppercase tracking-[0.25em] text-outline font-bold mt-2">$2,400</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="min-w-[320px] md:min-w-[400px] snap-start group cursor-pointer reveal animate-fade-up stagger-3">
+<div class="aspect-[3/4] overflow-hidden mb-8 bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-110" data-alt="High-end knitwear turtleneck" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP8blPrdvScqHEefw1khoedWMkR9gGLrs_7S62A203AEyh4D84lx_uQR4gTVLTZ6M2bODZ8gfvc6eiBKZrJeJv5qJW0ftlTF4cJEYpKLYTKm5DznhISbpYZ5AYMCfCtteII-S4x3ER_mTfsIR9wd7VmO_ClzINffDtrwmEPvWShFhjdgaC7l1iQ9aoBcFQBcAnGyjU5DOLid0Ax398lfNLB4wPeI56W96r-jqvUCr1MI39P3PUVPoxkXhpWM7cxYupjanqi1hzia-s"/>
+</div>
+<div class="flex justify-between items-start gap-4 transition-transform duration-500 group-hover:translate-x-1">
+<div class="space-y-1">
+<span class="font-label uppercase tracking-[0.2em] text-[9px] text-outline font-bold">Knitwear</span>
+<h4 class="font-headline text-3xl tracking-tight leading-none font-normal">Merino Sculpted Turtleneck</h4>
+</div>
+<p class="font-label text-[11px] uppercase tracking-[0.25em] text-outline font-bold mt-2">$890</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#0e0e0e] border-t border-outline-variant/10 py-32 px-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-20 w-full max-w-7xl mx-auto reveal animate-fade-in">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col leading-none">
+<span class="text-3xl font-headline font-normal tracking-[0.3em] text-[#e5e2e1] uppercase">DAST</span>
+<span class="text-[8px] uppercase tracking-[0.4em] text-primary/80 mt-1 font-label">The Art of the Hand</span>
+</div>
+<p class="font-body text-outline text-[12px] leading-relaxed max-w-[260px] font-medium">
+                    Crafting timeless silhouettes for the modern observer. Defined by shadows, shaped by craftsmanship.
+                </p>
+</div>
+<div class="flex flex-col gap-8">
+<span class="font-label uppercase tracking-[0.4em] text-[10px] text-primary font-bold">Collection</span>
+<div class="flex flex-col gap-5">
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Men's Archive</a>
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Women's Edit</a>
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Objects</a>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<span class="font-label uppercase tracking-[0.4em] text-[10px] text-primary font-bold">Support</span>
+<div class="flex flex-col gap-5">
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Sustainability</a>
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Shipping</a>
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Returns</a>
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Contact</a>
+</div>
+</div>
+<div class="flex flex-col gap-10">
+<span class="font-label uppercase tracking-[0.4em] text-[10px] text-primary font-bold">Legal</span>
+<div class="flex flex-col gap-5">
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Privacy Policy</a>
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Terms of Use</a>
+<a class="font-label uppercase tracking-[0.3em] text-[9px] text-outline hover:text-primary transition-colors font-bold" href="#">Accessibility</a>
+</div>
+</div>
+</div>
+<div class="mt-32 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10 border-t border-outline-variant/10 pt-16 reveal animate-fade-in stagger-2">
+<span class="font-label uppercase tracking-[0.4em] text-[10px] text-outline/60 font-medium">© 2024 DAST ATELIER. ALL RIGHTS RESERVED.</span>
+<div class="flex gap-16">
+<span class="font-label uppercase tracking-[0.3em] text-[10px] text-outline/60 hover:text-primary transition-colors cursor-pointer font-bold">Instagram</span>
+<span class="font-label uppercase tracking-[0.3em] text-[10px] text-outline/60 hover:text-primary transition-colors cursor-pointer font-bold">Vimeo</span>
+<span class="font-label uppercase tracking-[0.3em] text-[10px] text-outline/60 hover:text-primary transition-colors cursor-pointer font-bold">Journal</span>
+</div>
+</div>
+</footer>
+<script>
+        // Intersection Observer to trigger animations on scroll
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const revealClasses = entry.target.classList;
+                    
+                    // Trigger animation
+                    entry.target.style.opacity = "1";
+                    
+                    // For elements with staggered animations, they will fire based on their class
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Interactive size selectors behavior
+        document.querySelectorAll('.size-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.size-btn').forEach(b => {
+                    b.classList.remove('border-primary', 'text-primary', 'bg-primary/5');
+                    b.classList.add('border-outline-variant/30');
+                });
+                this.classList.remove('border-outline-variant/30');
+                this.classList.add('border-primary', 'text-primary', 'bg-primary/5');
+            });
+        });
+    </script>
+</body></html>
